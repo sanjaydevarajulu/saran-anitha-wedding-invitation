@@ -144,13 +144,53 @@ body.intro #snd{opacity:1;pointer-events:auto}
 .stage.zoom .eb,.stage.zoom .ef,.stage.zoom .fp{opacity:0;transform:translateY(60px) scale(.96)}
 .stage.open .fp{transition:transform 1.3s cubic-bezier(.45,0,.2,1)}
 .lt .script{font-size:clamp(25px,7.4vw,33px)}
-@media(max-width:380px){
- .cp{left:6%;right:6%;top:13%}
- .cp .lab{font-size:8px;letter-spacing:.2em;line-height:1.4}
- .cp .w{font-size:clamp(18px,5.4vw,21px);line-height:1.2;white-space:normal;max-width:100%;margin:3px auto}
- .cp .n{font-size:clamp(38px,11vw,44px);line-height:1.24;margin:1px 0}
- .cp .a{font-size:20px;line-height:1.2;margin:0}
-}</style></head><body>
+/* Fluid layout for phones and narrow tablets. Scale text continuously so it
+   adapts to common Android/iPhone widths, not only one breakpoint. */
+@media(max-width:600px){
+ #app{width:100%;max-width:440px;overflow:hidden}
+ .stage{width:min(90vw,430px)}
+ .lt{left:7%;right:7%;padding:5%}
+ .lt .script{font-size:clamp(23px,7.2vw,32px);line-height:1.12;white-space:normal;max-width:100%}
+ .lt .lab{font-size:clamp(7px,2.1vw,9px);letter-spacing:.22em}
+ .lt .nm{font-size:clamp(16px,4.8vw,20px)}
+ .cp{left:6%;right:6%;top:14%;}
+ .cp .orn{font-size:clamp(17px,5vw,22px)!important;letter-spacing:.3em}
+ .cp .lab{font-size:clamp(7px,2vw,9px);letter-spacing:.2em;line-height:1.4}
+ .cp .script{margin:clamp(1px,.8vw,4px) 0;line-height:1.18}
+ .cp .w{font-size:clamp(17px,5.2vw,24px);white-space:normal;max-width:100%;margin:3px auto;overflow-wrap:normal}
+ .cp .n{font-size:clamp(34px,10.5vw,50px);line-height:1.2;margin:0}
+ .cp .a{font-size:clamp(18px,5.5vw,23px);line-height:1.15;margin:0}
+ .sc{font-size:clamp(12px,3.8vw,16px)}
+ section{padding:clamp(38px,11vw,54px) clamp(14px,5.5vw,22px);}
+ h2{font-size:clamp(36px,11vw,48px);line-height:1.08}
+ .orn{font-size:clamp(18px,5vw,22px);letter-spacing:.28em}
+ .dg{grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(8px,3vw,14px);width:100%;max-width:340px}
+ .dc{min-width:0;height:clamp(118px,39vw,150px)}
+ .dc small{font-size:clamp(6px,1.9vw,8px);letter-spacing:.12em}
+ .dc b{font-size:clamp(38px,12vw,52px)}
+ .dc span{font-size:clamp(7px,2.2vw,10px);letter-spacing:.04em;white-space:nowrap}
+ .card{width:100%;padding:clamp(52px,17vw,78px) clamp(22px,8vw,40px);}
+ .card .script{font-size:clamp(30px,9.5vw,42px);line-height:1.12}
+ .card .lab{font-size:clamp(7px,1.9vw,8px);letter-spacing:.13em}
+ .nb{width:100%;max-width:300px}
+ .vs{font-size:clamp(14px,4.2vw,16px);line-height:1.35;max-width:34ch}
+ .tl{width:100%;max-width:340px}
+ .mo{margin:0 clamp(6px,3vw,12px);padding-bottom:34px}
+ .mo p{overflow-wrap:anywhere}
+ .mo b{font-size:clamp(21px,6.4vw,24px);line-height:1.15}
+ .mo .lab{font-size:clamp(7px,1.9vw,9px);letter-spacing:.16em}
+ footer{padding-inline:clamp(16px,6vw,24px);font-size:clamp(16px,4.5vw,18px)}
+ #snd{right:max(12px,calc((100vw - 412px)/2 + 14px))}
+}
+@media(max-width:360px){
+ .cp{left:5%;right:5%;top:12%}
+ .cp .w{font-size:clamp(16px,5vw,19px)}
+ .cp .n{font-size:clamp(32px,10vw,38px)}
+ .cp .lab{letter-spacing:.16em}
+ .dc small{letter-spacing:.08em}
+ .dc span{font-size:7px;letter-spacing:0}
+}
+</style></head><body>
 <div id="ld"><div class="ldo">✦ ✧ ✦</div></div><canvas id="fx"></canvas><button id="snd" aria-label="Toggle music">❚❚</button>
 <div id="app">
 <div id="env"><div class="stage" id="st">
