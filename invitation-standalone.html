@@ -146,7 +146,7 @@ body.intro #snd{opacity:1;pointer-events:auto}
 .lt .script{font-size:clamp(25px,7.4vw,33px)}
 /* Fluid layout for phones and narrow tablets. Scale text continuously so it
    adapts to common Android/iPhone widths, not only one breakpoint. */
-@media(max-width:600px){
+@media(max-width:900px),(max-device-width:900px){
  #app{width:100%;max-width:440px;overflow:hidden}
  #env{padding-block:max(14px,env(safe-area-inset-top,0px)) max(14px,env(safe-area-inset-bottom,0px))}
  .stage{width:min(90vw,430px,62svh)}
