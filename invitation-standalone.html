@@ -169,14 +169,18 @@ body.intro #snd{opacity:1;pointer-events:auto}
  .dc small{font-size:clamp(6px,1.9vw,8px);letter-spacing:.12em}
  .dc b{font-size:clamp(38px,12vw,52px)}
  .dc span{font-size:clamp(7px,2.2vw,10px);letter-spacing:.04em;white-space:nowrap}
- .card{width:100%;aspect-ratio:auto;min-height:clamp(460px,132vw,540px);padding:100px clamp(72px,23vw,96px);gap:clamp(14px,3.8vw,18px)}
+ .card{width:100%;aspect-ratio:auto;min-height:clamp(520px,145vw,590px);padding:130px clamp(82px,25vw,105px);gap:clamp(14px,3.8vw,18px)}
  .card>*{flex-shrink:0;max-width:100%}
  .card .script{font-size:clamp(30px,9.5vw,42px);line-height:1.18}
- .card h2{font-size:clamp(24px,8vw,34px)!important;line-height:1.2!important}
+ .card h2{order:1;font-size:clamp(24px,8vw,34px)!important;line-height:1.2!important}
+ .card>p.lab:first-child{order:2}
+ .card .nb{order:3}
+ .card .vs{order:4}
+ .card>p.lab:last-child{order:5}
  .card>p.lab:first-child{margin-bottom:3px}
  .card .lab{max-width:100%;font-size:clamp(7px,1.9vw,8px);letter-spacing:.1em;overflow-wrap:anywhere}
  .nb{width:100%;max-width:300px;padding:12px 0}
- .vs{width:100%;max-width:20ch;font-size:clamp(14px,4.2vw,16px);line-height:1.4;overflow-wrap:anywhere}
+ .vs{width:100%;max-width:17ch;font-size:clamp(14px,4.2vw,16px);line-height:1.4;overflow-wrap:anywhere}
  .tl{width:100%;max-width:340px}
  .mo{margin:0 clamp(6px,3vw,12px);padding-bottom:34px}
  .mo p{overflow-wrap:anywhere}
