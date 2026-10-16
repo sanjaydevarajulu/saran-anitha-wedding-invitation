@@ -148,7 +148,10 @@ body.intro #snd{opacity:1;pointer-events:auto}
    adapts to common Android/iPhone widths, not only one breakpoint. */
 @media(max-width:600px){
  #app{width:100%;max-width:440px;overflow:hidden}
- .stage{width:min(90vw,430px)}
+ #env{padding-block:max(14px,env(safe-area-inset-top,0px)) max(14px,env(safe-area-inset-bottom,0px))}
+ .stage{width:min(90vw,430px,62svh)}
+ .hero{height:100vh;height:100svh;aspect-ratio:auto}
+ main>section{min-height:100vh;min-height:100svh}
  .lt{left:7%;right:7%;padding:5%}
  .lt .script{font-size:clamp(23px,7.2vw,32px);line-height:1.12;white-space:normal;max-width:100%}
  .lt .lab{font-size:clamp(7px,2.1vw,9px);letter-spacing:.22em}
