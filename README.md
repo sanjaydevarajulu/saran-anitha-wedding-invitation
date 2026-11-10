@@ -11,7 +11,7 @@ An animated wedding invitation: burgundy-and-gold envelope with a wax seal (your
 | `assets/envelope-floral-frame.webp` | Embossed floral frame on the envelope. |
 | `assets/frame-clean.webp` | Same frame without the centre circle (used on the invitation card). |
 | `assets/logo-sa.webp` | Your SA monogram, cropped round for the seal and letter. |
-| `assets/tum-tum-instrumental-clip.mp3` | Background music, played on the seal tap. |
+| `assets/wedding-background-music.mp3` | Background music, played on the seal tap. |
 | `assets/original/` | Your original uploaded images, untouched. |
 
 ## Open it
@@ -25,7 +25,7 @@ Search for these texts and replace them:
 - Venue: `Details to be announced`
 - Parents / wording: the paragraph starting `With the blessings of our elders`
 - Colours: at the top of the `<style>` block, the `:root{...}` list and the section marked `/* ROYAL */`
-- Music: the supplied MP3 loops after the seal is tapped. Replace `assets/tum-tum-instrumental-clip.mp3` to use a different recording.
+- Music: the supplied MP3 loops after the seal is tapped. Replace `assets/wedding-background-music.mp3` to use a different recording.
 
 ## Put it online (free)
 1. Go to https://app.netlify.com/drop
